@@ -301,6 +301,17 @@ header {
 .product-list {
   padding: 100px 20px 100px;
 }
+
+.product-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card-half {
+  flex: 1;
+}
 /* product list END */
 
 /* footer */
@@ -343,6 +354,26 @@ footer {
 }
 
 .footer-box-1 ul li:hover a {
+  color: #0accbe;
+}
+
+.footer-box-1 p {
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.footer-box-1 p.phone-num {
+  margin-bottom: 18px;
+}
+
+.footer-box-1 a {
+  color: #fff;
+  margin-right: 12px;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.footer-box-1 a:hover {
   color: #0accbe;
 }
 
