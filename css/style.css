@@ -83,6 +83,10 @@ header {
   transition: 0.1s;
 }
 
+header.sticky {
+  background-color: #5f67df;
+}
+
 .header__container {
   display: flex;
   max-width: 70%;
@@ -182,6 +186,10 @@ header {
 .section__title {
   margin-bottom: 60px;
   padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .section__title h4,
@@ -201,6 +209,13 @@ header {
   color: #262f3c;
   font-size: 42px;
   font-weight: 400;
+  margin-bottom: 36px;
+}
+
+.section__title p {
+  text-align: center;
+  width: 60%;
+  margin-bottom: 24px;
 }
 
 .services__container {
@@ -223,6 +238,7 @@ header {
   transition: 0.4s;
   padding: 24px;
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 .services-box:hover {
@@ -311,6 +327,9 @@ header {
 
 .product-card-half {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* product list END */
 
@@ -333,6 +352,13 @@ footer {
 
 .footer-box-1 {
   flex: 1;
+}
+
+.footer-box-1 h4 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 24px;
 }
 
 .footer-box-1 h5 {
@@ -371,6 +397,10 @@ footer {
   margin-right: 12px;
   font-size: 18px;
   transition: 0.4s;
+}
+
+.footer-box-1 .description {
+  width: 70%;
 }
 
 .footer-box-1 a:hover {
