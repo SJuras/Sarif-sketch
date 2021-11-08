@@ -1,0 +1,42 @@
+
+/*
+colors:
+black: #262f3c;
+light-text: #8f9bad;
+
+blue: #5a5fd9;
+light-blue: #5f67df;
+
+tirquise: #0accbe;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* general */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+/* general END */
+
+/* buttons */
+.btn {
+
+}
+
+.btn-white {
+
+}
+/* buttons END */
