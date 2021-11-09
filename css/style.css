@@ -8,6 +8,8 @@ blue: #5a5fd9;
 light-blue: #5f67df;
 
 tirquise: #0accbe;
+
+almost-white: #f9f8f8;
 */
 
 * {
@@ -66,7 +68,7 @@ img {
 }
 
 .btn-white:hover {
-  background-color: #8f9bad;
+  background-color: #5f67df;
   border: 2px solid #8f9bad;
   color: #fff;
 }
@@ -78,7 +80,7 @@ header {
   position: fixed;
   background-color: transparent;
   z-index: 1000;
-  padding: 24px 0px;
+  padding: 18px 0px;
   border-bottom: 2px solid #5f67df;
   transition: 0.1s;
 }
@@ -89,22 +91,33 @@ header.sticky {
 
 .header__container {
   display: flex;
-  max-width: 70%;
+  align-items: center;
+  width: 70%;
   margin: 0 auto;
 }
 
 .header__container-box-1 {
-  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
 }
 
 .navigation {
-  flex: 4;
+  width: 90%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__container-box-2,
 .header__container-box-3 {
-  flex: 1;
+
 }
 
 .header__container-box-3 {
@@ -119,11 +132,12 @@ header.sticky {
 }
 
 .header__container-box-2 ul li {
-  margin: 0px 16px;
+  margin-left: 16px;
 }
 
 .header__container-box-2 ul li a {
-  margin: 0px 16px;
+  margin: 0px;
+  margin-left: 16px;
   color: #fff;
   transition: 0.4s;
 }
@@ -143,6 +157,29 @@ header.sticky {
   color: #0accbe;
 }
 /* header END */
+
+/* toggle */
+.toggle {
+  width: 40px;
+  height: 40px;
+  background: url("../img/menu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-right: 12px;
+  display: none;
+}
+
+.toggle.active {
+  background: url("../img/close.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  cursor: pointer;
+}
+/* toggle END */
 
 /* hero */
 .hero-section {
@@ -316,6 +353,7 @@ header.sticky {
 /* product list */
 .product-list {
   padding: 100px 20px 100px;
+  background-color: #f9f8f8;
 }
 
 .product-card {
@@ -348,6 +386,11 @@ footer {
 .footer-row-1 {
   display: flex;
   padding: 42px 0px 36px;
+}
+
+.footer-row-half {
+  display: flex;
+  flex: 1;
 }
 
 .footer-box-1 {
@@ -417,3 +460,33 @@ footer {
   color: #fff;
 }
 /* footer END */
+
+/* media queries */
+@media (max-width: 991.98px){
+  .toggle {
+    display: block;
+  }
+
+  .footer-row-1 {
+    flex-direction: column;
+  }
+
+  .footer-row-half {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer-row-half {
+    flex-direction: column;
+  }
+
+  .footer-row-2 p {
+    text-align: left;
+  }
+
+  .footer-box-1 {
+    margin-bottom: 18px;
+  }
+}
