@@ -467,7 +467,80 @@ header.sticky {
 .page-hero span {
   color: #0accbe;
 }
+
+.line-devider {
+  margin-bottom: 54px;
+  position: relative;
+}
+
+.line-devider::after {
+  content: '';
+  position: absolute;
+  bottom: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background-color: #d3d3d3;
+}
 /* about Page END */
+
+/* contact page */
+.contact-detail-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.contact-detail-half {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-l {
+  border-left: 1px solid #d3d3d3;
+}
+
+.contact-half-inner {
+  position: relative;
+}
+
+.contact-half-inner h5 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #0accbe;
+  margin-bottom: 12px;
+}
+
+.contact-half-inner ul {
+  margin-bottom: 18px;
+}
+
+.contact-detail-half ul li,
+.contact-half-inner ul li {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.contact-info {
+  background-color: #f9f8f8;
+}
+
+.contact-form {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.contact-form input[type='text'],
+.contact-form input[type='email'],
+.contact-form input[type='submit']{
+  width: 48%;
+}
+/* contact page END */
 
 /* footer */
 footer {
@@ -612,6 +685,18 @@ footer {
 
   .scroll-down-icon {
     display: flex;
+  }
+
+  .product-card {
+    flex-direction: column;
+  }
+
+  .product-card-half {
+    margin-bottom: 36px;
+  }
+
+  .section__title p {
+    width: 80%;
   }
 
   .footer-row-1 {
