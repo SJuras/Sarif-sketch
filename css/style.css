@@ -841,6 +841,7 @@ footer {
   }
 
   .contact-detail-half {
+    width: 100%;
     margin-bottom: 24px;
   }
 
@@ -913,7 +914,7 @@ footer {
 
   .contact-detail-half ul li,
   .contact-half-inner ul li {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 6px;
   }
 
