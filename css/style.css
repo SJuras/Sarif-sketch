@@ -372,6 +372,12 @@ header.sticky {
   box-shadow: 0px 9px 24px 4px rgba(0,0,0,0.32);
 }
 
+.services-box i {
+  color: #0accbe;
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
 .services-box h4 {
   color: #262f3c;
   font-size: 24px;
@@ -565,11 +571,50 @@ header.sticky {
   width: 60%;
 }
 
-.contact-form input[type='text'],
-.contact-form input[type='email'],
-.contact-form input[type='submit']{
-  width: 48%;
+.contact-row {
+    width: 100%;
+    display: flex;
 }
+
+.contact-box {
+  width: 50%;
+  padding: 12px;
+}
+
+.added-padding {
+  padding: 12px;
+}
+
+.contact-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d3d3d3;
+  border-radius: 20px;
+}
+
+.contact-box input[type='submit']{
+  background-color: #0accbe;
+  color: #fff;
+  font-weight: 500;
+  border: 1px solid #0accbe;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  padding: 16px;
+  resize: none;
+  height: 200px;
+  border: 1px solid #d3d3d3;
+  border-radius: 20px;
+}
+
+.contact-box input:focus,
+textarea:focus {
+  outline: 1px solid #0accbe;
+}
+
 /* contact page END */
 
 /* footer */
