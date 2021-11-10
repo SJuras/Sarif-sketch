@@ -210,6 +210,36 @@ header.sticky {
   margin: 0 auto;
 }
 
+.hero-inner-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-inner-half {
+  width: 50%;
+}
+
+.right-half {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.dots-img {
+  width: 60%;
+  height: auto;
+}
+
+.smartphone {
+  position: absolute;
+  bottom: -231px;
+  left: 251px;
+  z-index: 900;
+}
+
 .section__container h2 {
   color: #fff;
   font-size: 6em;
