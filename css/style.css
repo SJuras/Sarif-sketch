@@ -694,7 +694,7 @@ header.sticky {
 
 .sample-box {
   width: 300px;
-  height: 360px;
+  height: 300px;
   margin-bottom: 24px;
   transition: 0.4s;
   padding: 12px;
@@ -1019,6 +1019,18 @@ footer {
 
   .hero-section {
     height: 90vh;
+  }
+
+  .hero-inner-half {
+    width: 100%;
+  }
+
+  .left-half {
+    width: 100%;
+  }
+
+  .right-half {
+    display: none;
   }
 
   .mr {
