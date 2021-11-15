@@ -1040,16 +1040,20 @@ footer {
     width: 80%;
   }
 
+  .section__container {
+    width: 90%;
+  }
+
+  .hero-contain {
+    width: 70%;
+  }
+
   .section__title {
     margin-bottom: 20px;
   }
 
   .section__container h2 {
     font-size: 4em;
-  }
-
-  .section__container {
-    width: 70%;
   }
 
   .about {
@@ -1064,12 +1068,19 @@ footer {
     height: 70vh;
   }
 
+  .showcase-card {
+    width: 300px;
+    height: 300px;
+    padding: 12px;
+  }
+
   .contact-row {
     flex-direction: column;
   }
 
   .contact-box {
     width: 100%;
+    padding: 6px 12px;
   }
 
   .contact-detail-half ul li,
